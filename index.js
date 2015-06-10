@@ -1,4 +1,4 @@
-//node libraries
+//node libraries, should also be contained in the /package.json file
 var koa = require('koa');
 var koa_router = require('koa-router');
 var session = require('koa-generic-session');
@@ -16,8 +16,8 @@ var public_api = require('./lib/api/public_api.js')(auth);//api that can accesse
 
 //initializers
 var app = koa();
-var router = new koa_router(); 
-var public_router = new koa_router();
+var router = new koa_router(); //this is for the authenticated api
+var public_router = new koa_router();//for the non-authenicated api.
 
 
 //The component order is important.
@@ -41,6 +41,6 @@ components.public_routes(app,public_router,mount,public_api);
 //The following routes require a valid session.
 components.routes(app,router,mount,api);
 
-if (!module.parent) app.listen(1337);
-console.log('Dictapi is Running on http://localhost:3000/');
+if (!module.parent) app.listen(1337);//move the port to a config file.
+console.log('the Api is running on port 1337');
 //__________________________________________________________________
