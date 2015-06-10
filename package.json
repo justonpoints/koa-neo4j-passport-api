@@ -1,0 +1,33 @@
+{
+  "name": "koa-api-dictionary",
+  "version": "0.0.1",
+  "description": "koa-api-dictionary application",
+  "keywords": [
+    "koa",
+    "api"
+  ],
+  "main": "index",
+  "author": {
+    "name": "Juston Points",
+    "email": "justonpoints@gmail.com"
+  },
+  "repository": {
+  },
+  "dependencies": {
+    "koa": "*",
+    "koa-better-ratelimit": "*",
+    "koa-compress": "*",
+    "koa-generic-session":"*",
+    "koa-logger": "*",
+    "koa-mount": "*",
+    "koa-passport":"*",
+    "passport-local":"*",
+    "koa-request":"*",
+    "koa-router": "*"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.11.13"
+  },
+  "devDependencies": {}
+}
