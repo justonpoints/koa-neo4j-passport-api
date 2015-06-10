@@ -18,7 +18,7 @@ Plans:
 
 1. To flush this out further.
 2. Continue to explore the organzational theory being approached here.
-	a. All depedendcies declared in the index.js. Dependencies are not declared in the lib files.
-	b. All middleware components refrenced in the /lib/lib.js file. Each instaces take at least an app depedency for the koa app.
+	- All dependencies declared in the index.js. Dependencies are not declared in the lib files.
+	- All middleware components refrenced in the /lib/lib.js file. Each instaces take at least an app depedency for the koa app.
 3. Update the Neo4j queries to be more generic.
 4. Add testing for the api.
