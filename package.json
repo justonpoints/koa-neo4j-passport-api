@@ -4,7 +4,9 @@
   "description": "koa-neo4j-passport-api application",
   "keywords": [
     "koa",
-    "api"
+    "api",
+    "neo4j",
+    "passport"
   ],
   "main": "index",
   "author": {
